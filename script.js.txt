@@ -1,0 +1,22 @@
+const words = [
+  { word: "apple", meaning: "사과" },
+  { word: "book", meaning: "책" },
+  { word: "cat", meaning: "고양이" },
+  { word: "dog", meaning: "개" },
+  { word: "egg", meaning: "계란" }
+];
+
+let index = 0;
+
+function showWord() {
+  const w = words[index];
+  document.getElementById("word").textContent = w.word;
+  document.getElementById("meaning").textContent = w.meaning;
+}
+
+document.getElementById("next-btn").addEventListener("click", () => {
+  index = (index + 1) % words.length;
+  showWord();
+});
+
+showWord();

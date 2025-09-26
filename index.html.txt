@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>단어 암기 앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>단어 암기 연습</h1>
+    <div class="word-card">
+      <div id="word">단어</div>
+      <div id="meaning">뜻</div>
+    </div>
+    <button id="next-btn">다음</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
